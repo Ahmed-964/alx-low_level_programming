@@ -7,18 +7,13 @@
  */
 int main(void)
 {
-    char ok = 'a';
-    for (ok = 'a'; ok<= 'z'; ok++)
-        {
-            putchar(ok);
-    }
-        char Ok = 'A';
-    for (Ok = 'A'; Ok<= 'Z'; Ok++)
-        {
-            putchar(ok);
-    }
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-    putchar('\n');
-
-    return 0;
+	for (i = 0; i < 52; i++)
+	{
+		putchar(alp[i]);
+	}
+	putchar('\n');
+	return (0);
 }
